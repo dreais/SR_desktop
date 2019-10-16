@@ -7,9 +7,7 @@ add_executable(SR_desktop Sources/main.c Header/core_sr_desktop.h Header/soundio
 
 if (WIN32)
     target_link_libraries(SR_desktop ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/libsoundio.a
-            ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/liblatency.dll.a
-            ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/libsoundio.dll.a
-            ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/libunit_tests.dll.a)
+            ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/libsoundio.dll.a)
 endif(WIN32)
 
 if (UNIX)
